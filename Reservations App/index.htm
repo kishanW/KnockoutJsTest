@@ -20,6 +20,27 @@
 	<link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-	
+	<h4>Your seat reservations (<span data-bind="text: seats().length"></span>)</h4>
+	<b data-bind="visible: totalSurcharge() > 0">
+		Total surcharge: $<span data-bind="text: totalSurcharge().toFixed(2)"></span>
+	</b>
+
+	<hr/>
+	<table>
+		<thead><tr>
+			<th>Passenger name</th><th>Meal</th><th>Surcharge</th><th></th>
+		</tr></thead>
+		<!-- Todo: Generate table body -->
+		<tbody data-bind="foreach: seats">
+			<tr>
+				<td><input data-bind="value: name" /></td>
+				<td><select data-bind="options: $root.availableMeals, value: meal, optionsText: 'mealName'"></select></td>
+				<td data-bind="text: formattedPrice"></td>
+				<td><a href="#" data-bind="click: $root.removeSeat">Remove</a></td>
+			</tr>    
+		</tbody>
+	</table>
+	<hr/>
+	<button data-bind="click: addSeat, enable: seats().length < 5" class="green">Reserve another seat</button>
 </body>
 </html>

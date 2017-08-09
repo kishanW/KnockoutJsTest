@@ -1,0 +1,210 @@
+*{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	outline: none !important;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 20px;
+	margin-top: 20px;
+}
+body{
+	padding: 10px;
+	background-color: #fff;
+	text-align: center;
+	margin: auto;
+}
+
+
+
+#content-container{
+	display: inline-block;
+}
+
+.background-blue{
+	background-color: #00BCD4 !important;
+}
+.background-yellow{
+	background-color: #FFC107 !important;
+}
+.background-red{
+	background-color: #F44336 !important;
+}
+.background-green{
+	background-color: #4CAF50 !important;
+}
+
+.dark-text{
+	color: rgba(0,0,0,0.6);
+}
+.light-text{
+	color: rgba(255,255,255,0.8);
+}
+.thin-text{	
+	font-weight: 300;
+}
+.bold-text{	
+	font-weight: 900;
+}
+.text-center{
+	text-align: center;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+	section.content{
+		margin: auto;
+		width: 100%;
+		height: 100%;
+		display: inline-block;
+		padding: 3em 1em;
+	}
+	h1 {
+		text-transform: uppercase;
+		font-size: 2rem;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+		display: inline-block;
+		word-break: break-all;
+		text-align: left;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	section.content{
+		margin:auto;
+		width: 29em;
+		height: 29em;
+		padding: 3.5rem 0.7rem;
+		float: left;
+		padding: 1em;
+	}
+	h1{
+		text-transform: uppercase;
+		font-size: 5rem;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+		text-align: center;
+		word-break: normal;
+	}
+	h2{
+		text-transform: uppercase;
+		font-size: 6rem;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	}
+	h3{
+		text-transform: uppercase;
+		font-size: 4rem;
+	}
+	h4{
+		text-transform: uppercase;
+		font-size: 3rem;
+	}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+input,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea{
+	display: inline-block;
+	width: 100%;
+	padding: 10px 20px;
+	border: none;
+	background-color: rgba(0,0,0, 0.05);
+	color: #333;
+}
+input,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus{
+	background-color: rgba(0,0,0, 0.1);
+}
+textarea{
+	width: 100% !important;
+}
+
+button,
+*.buttonb{
+	display: inline-block;
+	width: 200px;
+	padding: 10px 20px;
+	border: none;
+	background-color: #7F8C8D;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+button:focus,
+button:hover{
+	background-color: #95A5A6;
+	cursor: pointer;
+}
+
+label,
+* label{
+	display: inline-block;
+	width: 100%;
+	color: #333;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+
+.red{
+	background-color: #E74C3C;
+}
+.green{
+	background-color: #0EC94D;
+}
+.yellow{
+	background-color: #F39C12;
+}
+.blue{
+	background-color: #3498DB;
+}
+
+button.red:hover,
+*.button.red{
+	background-color: #E9573F;
+}
+button.green:hover,
+*.button.green{
+	background-color: #5DCF41;
+}
+button.yellow:hover,
+*.button.yellow{
+	background-color: #F6BB42;
+}
+button.blue:hover,
+*.button.blue{
+	background-color: #3BAFDA;
+}
